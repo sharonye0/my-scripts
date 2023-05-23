@@ -10,7 +10,7 @@ add_and_commit()
 
 push() 
 {
-    echo "pushing"
+    echo "pushing..."
     git push -u origin main
 }
 
