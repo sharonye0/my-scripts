@@ -6,6 +6,8 @@ add_and_commit()
     echo "Adding and Committing ALL changes..."
     echo "Your Committing message is: $message"
     git add . && git commit -m "$message"
+    echo ""
+    echo ""
 }
 
 push() 
