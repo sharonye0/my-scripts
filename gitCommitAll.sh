@@ -3,8 +3,10 @@
 add_and_commit()
 {
     message="$1"
+    echo ""
     echo "Adding and Committing ALL changes..."
     echo "Your Committing message is: $message"
+    echo ""
     git add . && git commit -m "$message"
     echo ""
     echo ""
@@ -12,7 +14,7 @@ add_and_commit()
 
 push() 
 {
-    echo "pushing..."
+    echo "Pushing changes..."
     git push -u origin main
 }
 
