@@ -18,12 +18,22 @@ push()
     git push -u origin main
 }
 
+help() {
+      echo "The Usage of this script is: "
+      echo -e "    -h To get help."
+      echo -e "    -a To add and commit all files in current repo (You need to pass a commit message)."
+      echo -e "    For Example: \"./gitCommitAll.sh -a 'this is my commit message'\".\n"
+      echo -e "    -p If you want to push the changes you committed add this flag in the end."
+      echo -e "    For Example: \"./gitCommitAll.sh -a 'this is my commit message' -p\".\n"
+      echo ""
+}
 
 while getopts ha:p flag; 
 do
   case $flag in
     h)
-      echo "help me pls"
+        help
+        exit 0
       ;;
 
     a)
@@ -38,10 +48,10 @@ do
 
     \?)
       echo "NON existent flag, sorry"
+      help 
       exit 1
       ;;
 
   esac # END of case
 done
-
 
