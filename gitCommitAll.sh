@@ -11,7 +11,7 @@ add_and_commit()
 push() 
 {
     echo "pushing"
-    # git push -u origin main
+    git push -u origin main
 }
 
 
