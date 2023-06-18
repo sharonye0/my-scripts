@@ -1,5 +1,3 @@
-# myScripts
-
 ## **buildAndDeploy**
 
 This script is made for react projects that's got deployed with firebase
