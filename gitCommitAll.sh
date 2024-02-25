@@ -44,7 +44,7 @@ while getopts ha:p flag; do
     ;;
 
   \?)
-    echo "NON existent flag, sorry"
+    echo "NON existing flag, sorry"
     help
     exit 1
     ;;
